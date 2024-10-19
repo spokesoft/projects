@@ -1,0 +1,1 @@
+sqlpackage /Action:Publish /SourceFile:bin/Debug/Projects.Database.dacpac /TargetConnectionString:"Data Source=localhost;Initial Catalog=Projects;TrustServerCertificate=true;Integrated Security=SSPI;"

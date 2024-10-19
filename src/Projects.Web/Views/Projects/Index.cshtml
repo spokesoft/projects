@@ -1,0 +1,20 @@
+@model ProjectsIndexViewModel
+
+<h1>Projects</h1>
+
+<ul>
+    @foreach (var project in Model.Projects)
+    {
+        <li>
+            <a href="/projects/@project.Id">
+                @project.Name
+            </a>
+            <br />
+            Description: @project.Description
+            <br />
+            Created: @project.CreatedAt.ToShortDateString()
+            <br />
+            Updated: @project.UpdatedAt.ToShortDateString()
+        </li>
+    }
+</ul>
