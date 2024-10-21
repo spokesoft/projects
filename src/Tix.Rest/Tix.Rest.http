@@ -1,0 +1,6 @@
+@Projects.Rest_HostAddress = http://localhost:5181
+
+GET {{Tix.Rest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
