@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Projects.Web.Controllers;
+namespace Tix.Web.Controllers;
 
 public class AppController : Controller
 {

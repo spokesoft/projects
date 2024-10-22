@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace Projects.Data.Models;
+namespace Tix.Data.Models;
 
 [Table("Tickets", Schema = "App")]
 public partial class Ticket

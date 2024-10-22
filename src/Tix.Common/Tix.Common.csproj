@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Projects.Data\Projects.Data.csproj" />
+    <ProjectReference Include="..\Tix.Data\Tix.Data.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

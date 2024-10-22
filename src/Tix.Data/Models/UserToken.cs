@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace Projects.Data.Models;
+namespace Tix.Data.Models;
 
 [PrimaryKey("UserId", "LoginProvider", "Name")]
 [Table("UserTokens", Schema = "Auth")]

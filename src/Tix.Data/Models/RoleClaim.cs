@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace Projects.Data.Models;
+namespace Tix.Data.Models;
 
 [Table("RoleClaims", Schema = "Auth")]
 public partial class RoleClaim

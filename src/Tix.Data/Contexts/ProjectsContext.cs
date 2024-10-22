@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Projects.Data.Models;
+using Tix.Data.Models;
 
-namespace Projects.Data.Contexts;
+namespace Tix.Data.Contexts;
 
-public partial class ProjectsContext : DbContext
+public partial class TixContext : DbContext
 {
-    public ProjectsContext(DbContextOptions<ProjectsContext> options)
+    public TixContext(DbContextOptions<TixContext> options)
         : base(options)
     {
     }

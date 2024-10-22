@@ -12,9 +12,9 @@
             <br />
             Description: @project.Description
             <br />
-            Created: @project.CreatedAt.ToShortDateString()
+            Created: @project.CreatedAt?.ToShortDateString()
             <br />
-            Updated: @project.UpdatedAt.ToShortDateString()
+            Updated: @project.UpdatedAt?.ToShortDateString()
         </li>
     }
 </ul>

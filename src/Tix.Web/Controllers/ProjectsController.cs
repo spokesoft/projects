@@ -2,10 +2,16 @@ using Microsoft.AspNetCore.Mvc;
 using Projects.Data.Models;
 using Projects.Web.Models;
 
-namespace Projects.Web.Controllers;
+namespace Tix.Web.Controllers;
 
+/// <summary>
+/// Projects Controller
+/// </summary>
 public class ProjectsController : AppController
 {
+    /// <summary>
+    /// Projects index page
+    /// </summary>
     [HttpGet("/projects")]
     public IActionResult Index()
     {
@@ -31,6 +37,10 @@ public class ProjectsController : AppController
         return View(vm);
     }
 
+    /// <summary>
+    /// Projects read page
+    /// </summary>
+    /// <param name="id"></param>
     [HttpGet("/projects/{id}")]
     public IActionResult Read(long id)
     {
