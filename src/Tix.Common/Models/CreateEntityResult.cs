@@ -1,5 +1,5 @@
 namespace Tix.Common.Models;
 
-public class CreateEntityResult<T>
+public class CreateEntityResult<T> : EntityResult<T>
 {
 }

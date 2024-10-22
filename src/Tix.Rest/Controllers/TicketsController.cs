@@ -27,6 +27,7 @@ public class TicketsController(
     public async Task<ActionResult<Ticket>> Create(ITicket ticket)
     {
         var created = await _tickets.CreateAsync(ticket);
+        return created;
     }
 
     /// <summary>

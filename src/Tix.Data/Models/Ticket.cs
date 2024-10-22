@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Tix.Data.Models;
 
 [Table("Tickets", Schema = "App")]
-public partial class Ticket
+public partial class Ticket : TixEntity
 {
     [Key]
     public long Id { get; set; }

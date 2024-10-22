@@ -156,13 +156,73 @@ public interface ITicketsService
     // Delete existing tickets
     // -------------
 
-    Ticket Delete(ITicket form); // Delete a ticket
-    Ticket Delete(TixQuery<Ticket> query);
+    /// <summary>
+    /// Delete an existing ticket by id.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     Ticket Delete(long id);
-    IEnumerable<Ticket> DeleteRange(IEnumerable<ITicket> forms);
-    IEnumerable<Ticket> DeleteRange(IEnumerable<long> ids);
-    Task<Ticket> DeleteAsync(ITicket form);
-    Task<Ticket> DeleteAsync(TixQuery<Ticket> query);
+
+    /// <summary>
+    /// Delete an existing ticket by id asynchronously.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     Task<Ticket> DeleteAsync(long id);
+
+    /// <summary>
+    /// Delete an existing ticket from the provided model.
+    /// </summary>
+    /// <param name="form"></param>
+    /// <returns></returns>
+    Ticket Delete(ITicket model); // Delete a ticket
+    
+    /// <summary>
+    /// Delete an existing ticket from the provided model asynchronously.
+    /// </summary>
+    /// <param name="form"></param>
+    /// <returns></returns>
+    Task<Ticket> DeleteAsync(ITicket model);
+    
+    /// <summary>
+    /// Delete an existing ticket from the provided query.
+    /// </summary>
+    /// <param name="query"></param>
+    /// <returns></returns>
+    Ticket Delete(TixQuery<Ticket> query);
+    
+    /// <summary>
+    /// Delete an existing ticket from the provided query asynchronously.
+    /// </summary>
+    /// <param name="query"></param>
+    /// <returns></returns>
+    Task<Ticket> DeleteAsync(TixQuery<Ticket> query);
+
+    /// <summary>
+    /// Delete a range of tickets resulting from the provided query.
+    /// </summary>
+    /// <param name="ids"></param>
+    /// <returns></returns>
+    IEnumerable<Ticket> DeleteRange(TixQuery<Ticket> query);
+
+    /// <summary>
+    /// Delete a range of tickets resulting from the provided query asynchronously.
+    /// </summary>
+    /// <param name="forms"></param>
+    /// <returns></returns>
+    Task<IEnumerable<Ticket>> DeleteRangeAsync(TixQuery<Ticket> query);
+
+    /// <summary>
+    /// Delete a range of tickets by ids.
+    /// </summary>
+    /// <param name="ids"></param>
+    /// <returns></returns>
+    IEnumerable<Ticket> DeleteRange(IEnumerable<long> ids);
+
+    /// <summary>
+    /// Delete a range of tickets by ids asynchronously.
+    /// </summary>
+    /// <param name="forms"></param>
+    /// <returns></returns>
     Task<IEnumerable<Ticket>> DeleteRangeAsync(IEnumerable<ITicket> forms);
 }
