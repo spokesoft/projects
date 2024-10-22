@@ -3,14 +3,14 @@ using System.CommandLine;
 namespace Tix.Build.Commands;
 
 /// <summary>
-/// Deploy command
+/// Clean command
 /// </summary>
-public class DeployCommand : Command
+public class CleanCommand : Command
 {
     /// <summary>
     /// Constructor
     /// </summary>
-    public DeployCommand() : base("clean", "Deploy a target project.")
+    public CleanCommand() : base("clean", "Cleans a target project.")
     {
     }
 }
